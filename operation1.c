@@ -6,7 +6,7 @@
 /*   By: sanglee2 <sanglee2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 15:15:24 by sanglee2          #+#    #+#             */
-/*   Updated: 2023/03/02 10:15:30 by sanglee2         ###   ########.fr       */
+/*   Updated: 2023/04/29 00:13:29 by sanglee2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ void pb(t_stack *stack)
 		stack->b_top->prev = NULL;
 	}
 
-	push_bot(stack, temp);
+	push_top(stack, temp);
 
 	stack->a_size = stack->a_size + 1;
 	stack->b_size = stack->b_size - 1;

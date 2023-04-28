@@ -6,7 +6,7 @@
 /*   By: sanglee2 <sanglee2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/08 14:29:49 by sanglee2          #+#    #+#             */
-/*   Updated: 2023/04/03 19:49:23 by sanglee2         ###   ########.fr       */
+/*   Updated: 2023/04/28 23:20:49 by sanglee2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,6 +99,7 @@ int main(int ac, char *av[])
     t_deq *deq_b;
 
     // 하드코딩, 정렬에 필요한 정보 위한 deq 크기 정보
+	// 구조체 안의 변수?
     int deq_size;
 
     // argument 유효성 체크 부분
@@ -108,6 +109,7 @@ int main(int ac, char *av[])
         error(); // error함수 호출
  
     // 두 deq 초기세팅
+	// 초기화 <- 인수를 넣어 deq 구성한다는 의미
     deq_a = init_deq(ac, av);
     deq_b = NULL;
 
